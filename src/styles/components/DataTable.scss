@@ -1,0 +1,64 @@
+.crud-wrap {
+    width: unset;
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        div.gap-4.row {
+            justify-content: center;
+        }
+    }
+
+}
+.table-wrap {
+    margin: auto;
+    margin-left: 0; // Ako ocu centar samo meknem ovo
+    overflow: auto;
+    width: fit-content !important;
+}
+
+.MuiDataGrid-root {
+    padding: 0;
+    p {
+        margin: 0 !important;
+    }
+    .MuiDataGrid-columnHeadersInner {
+        background-color: #fab76f;
+        div {
+            font-weight: bold !important;
+        }
+    }
+
+    .MuiDataGrid-cell {
+        white-space: break-spaces !important;
+    }
+}
+.create-form {
+    border-radius: 20px;
+    border: 1px solid #0e3aea30 !important;
+    .close-form-btn {
+        box-shadow: unset;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: #e05349 !important;
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.MuiDataGrid-virtualScroller {
+    min-height: 50px;
+}
+
+.MuiDataGrid-virtualScrollerContent {
+    max-height: 520px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
